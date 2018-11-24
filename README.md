@@ -27,5 +27,5 @@ DirectoryIndex disabled
 
 ## Links
 
-<https://httpd.apache.org/docs/trunk/mod/mod_autoindex.html#headername>
-<https://glightbox.mcstudios.com.mx/>
+- <https://httpd.apache.org/docs/trunk/mod/mod_autoindex.html#headername>
+- <https://glightbox.mcstudios.com.mx/>
