@@ -3,7 +3,9 @@
 Simple lightbox implementation in Apache2 `DirectoryIndex`
 
 ![screenshot_1](/screenshot_1.png)
+
 ![screenshot_2](/screenshot_2.png)
+
 [[glightbox demo]](https://glightbox.mcstudios.com.mx/#examples)
 
 
