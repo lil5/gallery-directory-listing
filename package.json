@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "build:js": "cp ./node_modules/glightbox/dist/js/glightbox.min.js ./gallery/",
-    "build:css": "cleancss -o ./gallery/bundle.min.css ./node_modules/purecss/build/base-min.css ./node_modules/purecss/build/tables-min.css ./node_modules/glightbox/dist/css/glightbox.min.css",
+    "build:js": "cp ./node_modules/glightbox/dist/js/glightbox.min.js ./gallery/.glightbox.min.js",
+    "build:css": "cleancss -o ./gallery/.bundle.min.css ./node_modules/purecss/build/base-min.css ./node_modules/purecss/build/tables-min.css ./node_modules/glightbox/dist/css/glightbox.min.css",
     "build": "npm run build:js && npm run build:css",
     "test-docker": "./test/run.sh",
     "test-docker:build": "cp ./node_modules/glightbox/demo/img/large/* ./gallery/user/ && ./test/build.sh",
