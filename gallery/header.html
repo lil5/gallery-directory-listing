@@ -1,0 +1,52 @@
+<style>
+  @import url('/gallery/bundle.min.css');
+
+	body>h1 {
+		text-align: center;
+	}
+
+	body>table {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	th[colspan] {
+		display: none;
+	}
+
+	table th:first-child,
+	table td:first-child,
+	table th:last-child,
+	table td:last-child {
+		display: none;
+	}
+
+	@media screen and (max-width: 48em) {
+		table th:nth-child(1n+3),
+		table td:nth-child(1n+3) {
+			display: none;
+		}
+	}
+</style>
+
+<script src="/gallery/glightbox.min.js" type="text/javascript" async></script>
+
+<script type="text/javascript">
+  window.addEventListener('load', function () {
+		// purecss
+		document.querySelectorAll('table').forEach(function (el) {
+			el.className += ' pure-table pure-table-bordered'
+		})
+		// glightbox
+		document.querySelectorAll('tbody tr td a').forEach(function (el) {
+			// if not a directory
+			if (el.href.match(/\.[^\/]+$/) !== null) {
+				el.className += ' glightbox'
+			}
+		})
+
+    GLightbox({
+			selector: "glightbox"
+		})
+  })
+</script>

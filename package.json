@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "build:js": "cp ./node_modules/glightbox/dist/js/glightbox.min.js ./gallery/",
+    "build:css": "cleancss -o ./gallery/bundle.min.css ./node_modules/purecss/build/base-min.css ./node_modules/purecss/build/tables-min.css ./node_modules/glightbox/dist/css/glightbox.min.css",
+    "build": "npm run build:js && npm run build:css",
+    "test-docker": "./test/run.sh",
+    "test-docker:build": "cp ./node_modules/glightbox/demo/img/large/* ./gallery/user/ && ./test/build.sh",
+    "test-docker:clean": "./test/clean.sh"
+  },
+  "dependencies": {
+    "glightbox": "^1.0.8",
+    "purecss": "1.0.0"
+  },
+  "devDependencies": {
+    "clean-css": "^4.2.1",
+    "clean-css-cli": "^4.2.1"
+  }
+}
