@@ -8,6 +8,10 @@ Simple lightbox implementation in Apache2 `DirectoryIndex`
 
 [[glightbox demo]](https://glightbox.mcstudios.com.mx/#examples)
 
+> It is advisable to resize images for better download speeds
+>
+> See this script to copy and resize images <https://github.com/lil5/smallergallery>
+
 
 ## How to
 
@@ -29,3 +33,7 @@ DirectoryIndex disabled
 
 - <https://httpd.apache.org/docs/trunk/mod/mod_autoindex.html#headername>
 - <https://glightbox.mcstudios.com.mx/>
+
+## License
+
+[AGPL-3.0](/LICENSE)
