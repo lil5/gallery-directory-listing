@@ -33,6 +33,13 @@
 
 <script type="text/javascript">
   window.addEventListener('load', function () {
+		// mobile
+    document.querySelectorAll('html head')[0].appendChild(function() {
+			var el = document.createElement('meta')
+			el.name = "viewport"
+			el.content = "width=device-width, initial-scale=1
+			return el
+		}())
 		// purecss
 		document.querySelectorAll('table').forEach(function (el) {
 			el.className += ' pure-table pure-table-bordered'
